@@ -1,0 +1,26 @@
+{
+  "name": "codeverse-evaluator-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon dist/index.js",
+    "watch": "npx tsc -w",
+    "prestart": "npm run build",
+    "build": "npx tsc",
+    "dev": "npx concurrently --kill others \"npm run watch\" \"npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0"
+  }
+}
