@@ -7,14 +7,21 @@
     "watch": "npx tsc -w",
     "prestart": "npm run build",
     "build": "npx tsc",
-    "dev": "npx concurrently --kill others \"npm run watch\" \"npm start\""
+    "dev": "npx concurrently --kill others \"npm run watch\" \"npm start\"",
+    "prebuild": "npx eslint 'src/**/*.{ts,tsx}' --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.30.1",
     "@types/express": "^5.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "nodemon": "^3.1.10",
     "typescript": "^5.8.3"
   },
