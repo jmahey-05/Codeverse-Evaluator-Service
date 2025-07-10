@@ -17,7 +17,6 @@ const compat = new FlatCompat({
 
 export default defineConfig([
   {
-    // Your main config block
     extends: compat.extends("eslint:recommended", "plugin:@typescript-eslint/recommended"),
     languageOptions: {
       parser: tsParser,
