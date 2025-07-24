@@ -13,12 +13,5 @@ app.listen(serverConfig.PORT, ()=>{
     console.log(`Server started at Port: ${serverConfig.PORT}`);
 
     SampleWorker('SampleQueue');
-
-    SampleQueueProducer('SampleJob', {
-        name: "Sanket",
-        company: "Microsoft",
-        position: "SDE 2",
-        location: "Remote"
-    });
 });
   
